@@ -48,7 +48,9 @@ body {
       margin-bottom: 2px; }
 
 #play-off {
-  width: 800px; }
+  overflow-x: auto; }
+  #play-off > section {
+    width: 800px; }
 
 #tournament-bracket {
   overflow: auto;

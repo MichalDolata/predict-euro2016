@@ -67,7 +67,10 @@ body {
 }
 
 #play-off {
-  width: 800px;
+  overflow-x: auto;
+  > section {
+    width: 800px;
+  }
 }
 
 #tournament-bracket {
