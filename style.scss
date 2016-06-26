@@ -1,0 +1,186 @@
+body {
+  padding: 50px;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.navbar-euro {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  padding: 5px 0;
+}
+
+.navbar {
+  .container {
+    position: relative;
+  }
+}
+
+.group-round {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+.group-round:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+
+.group-matches {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  background-color: white;
+  padding: 10px;
+}
+
+.group-match {
+  margin-bottom: 10px;
+  text-align: center;
+  input {
+    width: 42px;
+    display: inline;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .result {
+    margin: 0 3px;
+  }
+  .teamA {
+    line-height: 24px;
+    img {
+      margin-bottom: 2px;
+    }
+  }
+  .teamB {
+    line-height: 24px;
+    img {
+      float: right;
+      margin-left: 3px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+#play-off {
+  width: 800px;
+}
+
+#tournament-bracket {
+  overflow: auto;
+  list-style-type: none;
+  padding: 0;
+  > li {
+    display: inline-block;
+    padding-left: 20px;
+  }
+  > li:first-child {
+    padding-left: 0;
+  }
+  .play-off-stage {
+    list-style-type: none;
+    padding: 0;
+    li:first-child {
+      text-align: center;
+      font: {
+        weight: bold;
+        size: 1.1em;
+      }
+      padding-bottom: 5px;
+    }
+  }
+  .play-off-match {
+    position: relative;
+    .play-off-team:first-child {
+      margin-bottom: 5px;
+    }
+    > .well {
+      padding: 10px;
+      width: 180px;
+      position: relative;
+      span {
+        font-size: 0.9em;
+        line-height: 34px;
+        float: left;
+      }
+      input {
+        float: right;
+      }
+    }
+  }
+}
+
+@mixin play-off-padding($ro) {
+  $match-size: 95px;
+  $margin-size: 20px;
+  $padding: ((16 / $ro - 1) * ($match-size +  $margin-size)) / 2;
+  $next_padding: ((16 / ($ro / 2) - 1) * ($match-size +  $margin-size)) / 2;
+
+  @if($ro != 16) {
+    .play-off-match {
+      padding: $padding 0;
+    }
+  }
+  @if($ro != 2) {
+    .bracket-link-top, .bracket-link-bottom {
+      height: $next_padding - $padding - ($match-size / 2);
+    }
+  }
+}
+
+#ro16 {
+  @include play-off-padding(16);
+}
+
+#ro8 {
+  @include play-off-padding(8);
+}
+
+#ro4 {
+  @include play-off-padding(4);
+}
+
+#ro2 {
+  @include play-off-padding(2);
+}
+
+.score {
+    width: 42px;
+}
+
+.bracket-link {
+  border-right: 1px solid black;
+  width: 100px;
+  position: absolute;
+  left: 180px;
+}
+
+.bracket-link-top {
+  @extend .bracket-link;
+  border-top: 1px solid black;
+  border-top-right-radius: 4px;
+  top: 47.5px;
+}
+
+.bracket-link-bottom {
+  @extend .bracket-link;
+  border-bottom: 1px solid black;
+  border-bottom-right-radius: 4px;
+  bottom: 47.5px;
+}
+
+.complete {
+  tr:first-child, tr:nth-child(2) {
+    background-color: #dff0d8;
+  }
+  tr:nth-child(3) {
+    background-color: #fcf8e3;
+  }
+  tr:last-child {
+    background-color: #f2dede;
+  }
+}

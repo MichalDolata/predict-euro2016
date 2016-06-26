@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Predict EURO 2016</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body data-spy="scroll" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-1"
+                        aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Predict EURO 2016</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#groupAB">GROUP A & B</a></li>
+                        <li><a href="#groupCD">GROUP C & D</a></li>
+                        <li><a href="#groupEF">GROUP E & F</a></li>
+                        <li><a href="#play-off">PLAY-OFF</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container">
+            <section id="group-stage">
+                <section class="row" id="groupAB">
+                    <section class="col-sm-6">
+                        <h3>Group A</h3>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Team</th>
+                                    <th>W</th>
+                                    <th>D</th>
+                                    <th>L</th>
+                                    <th>GD</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><img src="images/flags/fr.png"> France</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/flags/al.png"> Albania</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/flags/ch.png"> Switzerland</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/flags/ro.png"> Romania</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="A">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/fr.png"> France</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ro.png"> Romania</span>
+                                    </div>
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/al.png"> Albania</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ch.png"> Switzerland</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/ro.png"> Romania</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ch.png"> Switzerland</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/fr.png"> France</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/al.png"> Albania</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/ro.png"> Romania</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/al.png"> Albania</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/ch.png"> Switzerland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/fr.png"> France</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-sm-6">
+                        <h3>Group B</h3>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/flags/_England.png"> England</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/ru.png"> Russia</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/_Wales.png"> Wales</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/sk.png"> Slovakia</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="B">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/_Wales.png"> Wales</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/sk.png"> Slovakia</span>
+                                    </div>
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/_England.png"> England</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ru.png"> Russia</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/ru.png"> Russia</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/sk.png"> Slovakia</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/_England.png"> England</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/_Wales.png"> Wales</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/ru.png"> Russia</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/_Wales.png"> Wales</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/sk.png"> Slovakia</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/_England.png"> England</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="row" id="groupCD">
+                    <section class="col-sm-6">
+                        <h3>Group C</h3>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/flags/de.png"> Germany</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/ua.png"> Ukraine</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/pl.png"> Poland</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/_Northern%20Ireland.png"> Northern Ireland</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="C">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/pl.png"> Poland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/_Northern%20Ireland.png"> Northern Ireland</span>
+                                    </div>
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/de.png"> Germany</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ua.png"> Ukraine</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/ua.png"> Ukraine</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/_Northern%20Ireland.png"> Northern Ireland</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/de.png"> Germany</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/pl.png"> Poland</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/ua.png"> Ukraine</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/pl.png"> Poland</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/_Northern%20Ireland.png"> Northern Ireland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/de.png"> Germany</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-sm-6">
+                        <h3>Group D</h3>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/flags/es.png"> Spain</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/cz.png"> Czech Republic</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/tr.png"> Turkey</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/hr.png"> Croatia</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="D">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/tr.png"> Turkey</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/hr.png"> Croatia</span>
+                                    </div>
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/es.png"> Spain</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/cz.png"> Czech Republic</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/cz.png"> Czech Republic</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/hr.png"> Croatia</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/es.png"> Spain</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/tr.png"> Turkey</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/cz.png"> Czech Republic</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/tr.png"> Turkey</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/hr.png"> Croatia</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/es.png"> Spain</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section class="row" id="groupEF">
+                    <section class="col-sm-6">
+                        <h3>Group E</h3>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/flags/be.png"> Belgium</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/it.png"> Italy</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/ie.png"> Republic of Ireland</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/se.png"> Sweden</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="E">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/ie.png"> Republic of Ireland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/se.png"> Sweden</span>
+                                    </div>
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/be.png"> Belgium</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/it.png"> Italy</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/it.png"> Italy</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/se.png"> Sweden</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/be.png"> Belgium</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ie.png"> Republic of Ireland</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/it.png"> Italy</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/ie.png"> Republic of Ireland</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/se.png"> Sweden</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/be.png"> Belgium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-sm-6">
+                        <h3>Group F</h3>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Team</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><img src="images/flags/pt.png"> Portugal</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/is.png"> Iceland</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/at.png"> Austria</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/flags/hu.png"> Hungary</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="well">
+                            <div class="group-matches" data-group="F">
+                                <div class="group-round">
+                                    <div class="group-match" data-id="1">
+                                        <span class="teamA"><img src="images/flags/at.png"> Austria</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/hu.png"> Hungary</span>
+                                    </div>
+                                    <div class="group-match" data-id="2">
+                                        <span class="teamA"><img src="images/flags/pt.png"> Portugal</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/is.png"> Iceland</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="3">
+                                        <span class="teamA"><img src="images/flags/is.png"> Iceland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/hu.png"> Hungary</span>
+                                    </div>
+                                    <div class="group-match" data-id="4">
+                                        <span class="teamA"><img src="images/flags/pt.png"> Portugal</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/at.png"> Austria</span>
+                                    </div>
+                                </div>
+                                <div class="group-round">
+                                    <div class="group-match" data-id="5">
+                                        <span class="teamA"><img src="images/flags/is.png"> Iceland</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/at.png"> Austria</span>
+                                    </div>
+                                    <div class="group-match" data-id="6">
+                                        <span class="teamA"><img src="images/flags/hu.png"> Hungary</span>
+                                        <span class="result">
+                                            <input type="text" class="form-control" maxlength="2"> : <input type="text" class="form-control" maxlength="2">
+                                        </span>
+                                        <span class="teamB"><img src="images/flags/pt.png"> Portugal</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="row center-block" id="play-off">
+                <section class="hidden-xs">
+                    <h3>Play-off</h3>
+                    <ul id="tournament-bracket">
+                        <li>
+                            <ul class="play-off-stage" id="ro16">
+                                <li>1/8</li>
+                                <li class="play-off-match" data-id="1">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-top"></div>
+                                </li>
+                                <li class="play-off-match" data-id="2">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-bottom"></div>
+                                </li>
+                                <li class="play-off-match" data-id="3">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-top"></div>
+                                </li>
+                                <li class="play-off-match" data-id="4">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-bottom"></div>
+                                </li>
+                                <li class="play-off-match" data-id="5">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-top"></div>
+                                </li>
+                                <li class="play-off-match" data-id="6">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-bottom"></div>
+                                </li>
+                                <li class="play-off-match" data-id="7">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-top"></div>
+                                </li>
+                                <li class="play-off-match" data-id="8">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span>Team A</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span>Team B</span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                    <div class="bracket-link-bottom"></div>
+                                </li>
+                            </ul>    
+                        </li>
+                        <li>
+                            <ul class="play-off-stage" id="ro8">
+                                <li>1/4</li>
+                                <li class="play-off-match" data-id="1">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-top"></div>
+                                    </div>
+                                </li>
+                                <li class="play-off-match" data-id="2">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-bottom"></div>
+                                    </div>
+                                </li>
+                                <li class="play-off-match" data-id="3">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-top"></div>
+                                    </div>
+                                </li>
+                                <li class="play-off-match" data-id="4">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-bottom"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="play-off-stage" id="ro4">
+                                <li>1/2</li>
+                                <li class="play-off-match" data-id="1">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-top"></div>
+                                    </div>
+                                </li>
+                                <li class="play-off-match" data-id="2">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="bracket-link-bottom"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="play-off-stage" id="ro2">
+                                <li>Final</li>
+                                <li class="play-off-match" data-id="1">
+                                    <div class="well">
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                        <div class="clearfix play-off-team"><span></span> <input type="text" class="form-control score" maxlength="2"></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section class="visible-xs">
+                    TEST
+                </section>
+            </section>
+            <section class="center-block">
+                <p>Flags by <a href="http://www.icondrawer.com">www.icondrawer.com</a></p>
+            </section>
+        </main>
+        <script src="js/jquery-1.12.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
