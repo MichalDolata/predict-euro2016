@@ -8,4 +8,4 @@
 - Bootstrap
 
 ## Live demo
-[Demo](http://dolata.me/demos/predict-euro2016/)
+[Demo](https://michaldolata.github.io/predict-euro2016/)
